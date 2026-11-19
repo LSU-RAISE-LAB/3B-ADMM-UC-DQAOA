@@ -81,8 +81,7 @@ UC solution for the stored experiment.
 
 ```python
 rho = 200.0
-r_penalty = 50.0
-z_prox = 25.0
+Beta = 50.0
 max_iter = 80
 primal_tol = 1e-3
 accept_if_better = True
@@ -93,10 +92,10 @@ accept_tol = 1e-8
 
 ```python
 p_max = 2
-shots_train = 512
-final_shots = 256
+shots_train = 1024
+final_shots = 512
 
-adam_iters = 80
+adam_iters = 20
 learning_rate = 0.08
 fd_eps0 = 0.12
 
